@@ -1,0 +1,86 @@
+{
+  "durationInFrames": 150,
+  "fps": 30,
+  "shots": [
+    {
+      "id": "beat_intro",
+      "number": 1,
+      "name": "مشهد البداية: ظهور العنوان والخلفية المتوهجة",
+      "startFrame": 0,
+      "durationInFrames": 45,
+      "color": "#38bdf8"
+    },
+    {
+      "id": "beat_showcase",
+      "number": 2,
+      "name": "المشهد الرئيسي: استعراض شاشات الهواتف التفاعلية",
+      "startFrame": 45,
+      "durationInFrames": 65,
+      "color": "#2dd4bf"
+    },
+    {
+      "id": "beat_climax",
+      "number": 3,
+      "name": "المشهد الختامي: بريق الإضاءة والطفو الحركي",
+      "startFrame": 110,
+      "durationInFrames": 40,
+      "color": "#a855f7"
+    }
+  ],
+  "texts": [
+    {
+      "id": "txt_title_main",
+      "name": "العنوان الرئيسي: App Design",
+      "text": "App Design",
+      "fontSize": 104,
+      "color": "#ffffff",
+      "startFrame": 8,
+      "durationInFrames": 142,
+      "track": 0,
+      "holdToEnd": true,
+      "isDeleted": false
+    },
+    {
+      "id": "txt_title_sub",
+      "name": "العنوان المكمل: Software",
+      "text": "Software",
+      "fontSize": 104,
+      "color": "#ffffff",
+      "startFrame": 15,
+      "durationInFrames": 135,
+      "track": 1,
+      "holdToEnd": true,
+      "isDeleted": false
+    }
+  ],
+  "cards": [
+    {
+      "id": "card_phone_left",
+      "name": "الهاتف الأيسر (شاشة الواقع الافتراضي VR)",
+      "startFrame": 18,
+      "durationInFrames": 132,
+      "track": 2,
+      "holdToEnd": true,
+      "isDeleted": false
+    },
+    {
+      "id": "card_phone_center",
+      "name": "الهاتف الأوسط (شاشة تصفح الأفلام الرئيسية)",
+      "startFrame": 26,
+      "durationInFrames": 124,
+      "track": 3,
+      "holdToEnd": true,
+      "isDeleted": false
+    },
+    {
+      "id": "card_phone_right",
+      "name": "الهاتف الأيمن (شاشة تفاصيل فيلم Eternals)",
+      "startFrame": 34,
+      "durationInFrames": 116,
+      "track": 4,
+      "holdToEnd": true,
+      "isDeleted": false
+    }
+  ],
+  "audio": []
+}

@@ -1,0 +1,126 @@
+# ==========================================
+# Dependencies
+# ==========================================
+node_modules/
+.pnp
+.pnp.js
+
+# ==========================================
+# Sensitive Credentials & Auth Data
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.pem
+*.key
+*.cert
+
+# Machine-specific encrypted authentication tokens & agent keys
+studio/server/user-auth.json
+user-auth.json
+**/user-auth.json
+studio/server/agent-config.json
+agent-config.json
+**/agent-config.json
+scratch_*.json
+
+# ==========================================
+# Build Outputs & Bundles
+# ==========================================
+dist/
+dist-ssr/
+build/
+out/
+release/
+studio/release/
+studio/bin/
+bin/
+*.tsbuildinfo
+
+# ==========================================
+# Remotion & Media Render Artifacts
+# ==========================================
+.remotion/
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.webm
+renders/
+render/
+
+# ==========================================
+# Caches & Temporary Files
+# ==========================================
+.cache/
+.vite/
+.eslintcache
+.stylelintcache
+tmp/
+temp/
+*.tmp
+
+# ==========================================
+# Logs & Process Outputs
+# ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ==========================================
+# Operating System Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# IDE & Editor Configurations
+# ==========================================
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ==========================================
+# User Uploads & Transient Media
+# ==========================================
+studio/server/audio_uploads/*
+!studio/server/audio_uploads/.gitkeep
+studio/server/chat_uploads/*
+!studio/server/chat_uploads/.gitkeep
+templates/motion-starter/public/images/uploads/*
+!templates/motion-starter/public/images/uploads/.gitkeep
+templates/motion-starter/public/audio/uploads/*
+!templates/motion-starter/public/audio/uploads/.gitkeep
+
+# ==========================================
+# User Project Sessions (Prevent Git Restoration)
+# ==========================================
+studio/server/sessions/*.json
+!studio/server/sessions/.gitkeep
+
+# ==========================================
+# Test Scripts & Local Verification Artifacts
+# ==========================================
+test-agy-runner.mjs
+test-remotion-agent.mjs
+verified-local.txt
+test-*.png
+templates/motion-starter/test-*.png
+

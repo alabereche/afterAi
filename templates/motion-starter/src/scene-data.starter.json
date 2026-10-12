@@ -1,0 +1,51 @@
+{
+  "durationInFrames": 180,
+  "fps": 30,
+  "shots": [
+    {
+      "id": "beat_intro",
+      "number": 1,
+      "name": "مشهد البداية",
+      "startFrame": 0,
+      "durationInFrames": 180,
+      "color": "#38bdf8"
+    }
+  ],
+  "texts": [
+    {
+      "id": "txt_badge",
+      "text": "REMOTION AI STUDIO",
+      "fontSize": 18,
+      "color": "#a855f7",
+      "startFrame": 5,
+      "durationInFrames": 175,
+      "track": 0,
+      "holdToEnd": true,
+      "isDeleted": false
+    },
+    {
+      "id": "txt_title",
+      "text": "afterAi Studio",
+      "fontSize": 84,
+      "color": "#ffffff",
+      "startFrame": 12,
+      "durationInFrames": 168,
+      "track": 1,
+      "holdToEnd": true,
+      "isDeleted": false
+    },
+    {
+      "id": "txt_subtitle",
+      "text": "اكتب فكرتك في الشات لإنشاء وتصميم مشهد الفيديو",
+      "fontSize": 26,
+      "color": "#38bdf8",
+      "startFrame": 22,
+      "durationInFrames": 158,
+      "track": 2,
+      "holdToEnd": true,
+      "isDeleted": false
+    }
+  ],
+  "cards": [],
+  "audio": []
+}

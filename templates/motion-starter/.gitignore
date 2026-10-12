@@ -1,0 +1,23 @@
+node_modules/
+dist/
+build/
+out/
+.remotion/
+*.mp4
+*.webm
+*.log
+.DS_Store
+Thumbs.db
+
+# Scratch and transient test files
+*.flac
+ref_TEST_audio.aac
+*.py
+slices*.json
+slice_results.json
+sped_results.json
+all_recognized_segments.json
+full_recognition.json
+energy_profile.txt
+transcription.txt
+sped_up.wav

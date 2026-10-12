@@ -1,0 +1,90 @@
+{
+  "name": "remotion-ai-studio",
+  "version": "1.2.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "vite",
+    "server": "node server/api-server.mjs",
+    "start": "concurrently \"node server/api-server.mjs\" \"vite\"",
+    "electron": "electron electron/main.cjs",
+    "electron:dev": "concurrently -k \"vite\" \"electron electron/main.cjs\"",
+    "build": "tsc && vite build",
+    "pack:dir": "npm run build && electron-builder --dir",
+    "pack:installer": "npm run build && electron-builder --win nsis"
+  },
+  "build": {
+    "appId": "com.afterai.studio",
+    "productName": "afterAi",
+    "directories": {
+      "output": "release"
+    },
+    "asar": false,
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "server/**/*",
+      "public/**/*",
+      "bin/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "../templates/motion-starter",
+        "to": "templates/motion-starter",
+        "filter": [
+          "**/*",
+          "!out/**",
+          "!.cache/**",
+          "!frame-*.png",
+          "!test-*.png"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis",
+        "dir"
+      ],
+      "icon": "public/logo.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "afterAi",
+      "uninstallDisplayName": "afterAi",
+      "runAfterFinish": true
+    }
+  },
+  "dependencies": {
+    "@remotion/google-fonts": "^4.0.220",
+    "@remotion/player": "^4.0.220",
+    "clsx": "^2.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "html-to-image": "^1.11.13",
+    "html2canvas": "^1.4.1",
+    "lucide-react": "^0.441.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.220",
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.0",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "concurrently": "^8.2.2",
+    "electron": "^44.5.1",
+    "electron-builder": "^26.15.3",
+    "typescript": "^5.5.0"
+  }
+}

@@ -1,0 +1,14 @@
+node_modules/
+dist/
+dist-ssr/
+build/
+out/
+*.local
+.env
+.env.local
+!.env.example
+user-auth.json
+server/user-auth.json
+*.log
+.DS_Store
+Thumbs.db

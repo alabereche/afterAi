@@ -1,0 +1,23 @@
+[
+  {
+    "id": "gemini-3.8-flash-high",
+    "name": "Gemini 3.8 Flash (High)",
+    "badge": "High",
+    "description": "النموذج الافتراضي • تفكير عميق وهندسة حركية سينمائية متقدمة",
+    "provider": "Google"
+  },
+  {
+    "id": "gemini-3.8-flash-medium",
+    "name": "Gemini 3.8 Flash (Medium)",
+    "badge": "Medium",
+    "description": "استهلاك متزن للحصة وسرعة ممتازة للمهام والتعديلات القياسية",
+    "provider": "Google"
+  },
+  {
+    "id": "gemini-3.8-flash-low",
+    "name": "Gemini 3.8 Flash (Low)",
+    "badge": "Fast",
+    "description": "استجابة فائقة السرعة وأقل استهلاك للحصة للتعديلات السريعة الخفيفة",
+    "provider": "Google"
+  }
+]
